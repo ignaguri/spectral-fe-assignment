@@ -48,6 +48,8 @@ A list that renders a `TreeItem` component for every item of the `items` prop th
 - `TreeItem`
 A list item containing a clickable item name which will expand in another list of `TreeItem`s if it has children. The list-style type (bullets) varies depending on whether the item is open, closed, or is the end of the tree branch.
 
+### Screenshot
+![image](https://user-images.githubusercontent.com/9204176/125376806-26ab6900-e362-11eb-89df-3cfbdd4a97ab.png)
 
 ---
 
