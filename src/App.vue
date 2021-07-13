@@ -1,15 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <Layout>
+    <template #sidebar>
+      <sidebar></sidebar>
+    </template>
+    <template #content>
+      <chart></chart>
+    </template>
+  </Layout>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Layout from "./components/Layout";
+import Sidebar from "./sections/Sidebar";
+import Chart from "./sections/Chart";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Layout,
+    Sidebar,
+    Chart,
   },
 };
 </script>
@@ -19,8 +29,5 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
